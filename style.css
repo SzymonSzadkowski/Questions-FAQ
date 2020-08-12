@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(135, 206, 250, 0.1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.q-title{
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: darksalmon;
+    text-shadow: 2px 2px lightgrey;
+}
+
+.q-container{
+    display: grid;
+    row-gap: 20px;
+    width: 80%;
+}
+
+.question{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 5px 5px rgba(211, 211, 211, 1);
+}
+
+.q-main{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.q-main button{
+    border: none;
+    font-size: 1.7em;
+    background-color: transparent;
+    color: darksalmon;
+    cursor: pointer;
+    transition: all 0.7s ease-out;
+}
+
+.q-main button:hover{
+    transform: scale(1.2);
+    transform: rotate(45deg);
+}
+
+.answer1, .answer2, .answer3, .answer4{
+    font-family: sans-serif;
+    padding: 10px 0 5px 0;
+    border-top: 2px solid rgba(211, 211, 211, 0.7);
+    display: none;
+}
+
+/* show/close answer */
+
+.show_answer{
+    display: block;
+}
+
+@media screen and (min-width:769px){
+    .q-container{
+        width: 60%;
+    }
+}
